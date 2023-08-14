@@ -1,2 +1,13 @@
-# Geotastic-Hack
-Copied from my HurricaneSANS account, get the location in geoguessr.net
+onst linkElement = document.querySelector('a[href*="https://maps.google.com/maps/"]');
+
+const href = linkElement.getAttribute('href');
+
+const regex = /@(-?\d+\.\d+),(-?\d+\.\d+)/;
+const match = href.match(regex);
+const latitude = match[1];
+const longitude = match[2];
+
+console.log(`${latitude},${longitude}`);
+console.log(`${href}`);
+
+// Made by Hurricane, if you share this on YouTube or anything PLEASE CREDIT ME!!!!!!!!
