@@ -1,4 +1,11 @@
-onst linkElement = document.querySelector('a[href*="https://maps.google.com/maps/"]');
+# Geotastic Hack
+Gets Geoguessr Cords
+
+# Usage
+Here is an example of how to use the code:
+
+```
+const linkElement = document.querySelector('a[href*="https://maps.google.com/maps/"]');
 
 const href = linkElement.getAttribute('href');
 
@@ -11,3 +18,4 @@ console.log(`${latitude},${longitude}`);
 console.log(`${href}`);
 
 // Made by Hurricane, if you share this on YouTube or anything PLEASE CREDIT ME!!!!!!!!
+```
